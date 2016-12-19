@@ -1,0 +1,7 @@
+<label class="vt-checkbox">
+    <input class="vt-checkbox--input" type="checkbox"
+           v-model="checkable"
+           :disabled="disabled">
+    <span class="vt-checkbox--inner" :disabled="disabled" :checked="checkable"></span>
+    <span class="vt-checkbox--label" :disabled="disabled" :checked="checkable"><slot></slot></span>
+</label>
