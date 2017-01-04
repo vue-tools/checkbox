@@ -1,14 +1,14 @@
 {
-  "name": "checkbox",
-  "version": "0.1.0",
+  "name": "vt-checkbox",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vue-tools/checkbox"
+    "url": "https://github.com/vue-tools/vt-checkbox"
   },
   "main": "dist/index.vue",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vue-tools/checkbox/issues"
+    "url": "https://github.com/vue-tools/vt-checkbox/issues"
   },
   "babel": {
     "presets": [
@@ -18,7 +18,7 @@
       "transform-runtime"
     ]
   },
-  "homepage": "https://github.com/vue-tools/checkbox#readme",
+  "homepage": "https://github.com/vue-tools/vt-checkbox#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.20.0",
