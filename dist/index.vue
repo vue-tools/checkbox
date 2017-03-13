@@ -1,5 +1,13 @@
 <style src="./style.css"></style>
-<template src="./template.html"></template>
+<template>
+    <label class="ui-checkbox">
+    <input class="ui-checkbox__input" type="checkbox"
+           v-model="checkable"
+           :disabled="disabled">
+    <span class="ui-checkbox__inner" :disabled="disabled" :checked="checkable"></span>
+    <span class="ui-checkbox__label" :disabled="disabled" :checked="checkable"><slot></slot></span>
+</label>
+</template>
 <script>
     export default {
         props: {
@@ -12,6 +20,7 @@
                     return this.value
                 },
                 set(value){
+                    /* istanbul ignore next */
                     this.$emit('input', value)
                 }
             }
