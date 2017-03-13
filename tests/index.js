@@ -7,7 +7,9 @@ describe('vt-checkbox', () => {
     it('checkbox default', () => {
         let vm = new Vue({
             render(h) {
-                return h('Checkbox', {}, 'input checkbox')
+                return (
+                    <Checkbox>input checkbox</Checkbox>    
+                )
             },
             mounted(){
                 console.log('x')
