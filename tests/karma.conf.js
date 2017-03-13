@@ -2,7 +2,7 @@ let webpackTestConfig = require('./webpack.test.conf')
 
 module.exports = function (config) {
     config.set({
-        browsers: [/*'PhantomJS'*/, 'Chrome'],
+        browsers: ['PhantomJS'],
         frameworks: ['mocha', 'promise', 'sinon'],
         files: ['./index.js'],
         preprocessors: {
@@ -29,8 +29,7 @@ module.exports = function (config) {
             'karma-coverage',
             'karma-spec-reporter',
             'karma-sourcemap-loader',
-            'karma-phantomjs-launcher',
-            'karma-chrome-launcher'
+            'karma-phantomjs-launcher'
         ],
         webpack: webpackTestConfig,
         webpackMiddleware: {
