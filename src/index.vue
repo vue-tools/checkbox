@@ -11,13 +11,13 @@
 <script>
     export default {
         props: {
-            value: Boolean,
+            value: {},
             disabled: Boolean
         },
         computed: {
             checkable: {
                 get(){
-                    return this.value
+                    return Boolean(this.value)
                 },
                 set(value){
                     /* istanbul ignore next */
