@@ -11,14 +11,10 @@ describe('vt-checkbox', () => {
                     <Checkbox>input checkbox</Checkbox>    
                 )
             },
-            mounted(){
-                console.log('x')
-            },
             components: {
                 Checkbox
             }
         }).$mount()
-        console.log(vm.$el)
         let input = vm.$el.querySelector('.ui-checkbox__input')
         expect(vm.$el.classList.contains('ui-checkbox')).to.equal(true)
         expect(!!input).to.equal(true)
